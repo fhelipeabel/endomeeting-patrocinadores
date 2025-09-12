@@ -1,0 +1,173 @@
+<!-- =========================
+     PATROCINADORES — GRID RESPONSIVO (Greatpages)
+     Fundo transparente + título 36px Poppins + mensagem de agradecimento
+========================= -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+  .sponsors-wrap{
+    background: transparent;
+    padding: 24px 12px 8px;
+    font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  }
+
+  /* Título 36px, preto; apenas a palavra PATROCINADORES em vermelho e negrito */
+  .sponsors-title{
+    margin: 0 0 8px 0 !important;
+    font-size: 36px !important;
+    line-height: 1.1 !important;
+    font-weight: 400 !important;              /* regular */
+    text-align: center !important;
+    color: #000000 !important;                /* preto */
+    letter-spacing: .2px !important;
+  }
+  .sponsors-title .hl{
+    color: #8d0000 !important;                /* vermelho pedido */
+    font-weight: 700 !important;              /* bold apenas na palavra */
+    white-space: nowrap;   /* impede quebra automática */
+  }
+
+  /* Mensagem simples de agradecimento */
+  .sponsors-note{
+    margin: 0 auto 18px !important;
+    max-width: 920px !important;
+    text-align: center !important;
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+    color: #1F2430 !important;
+    opacity: .95 !important;
+  }
+
+  /* GRID */
+  .sponsors-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .sponsor-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform .2s ease, box-shadow .2s ease, opacity .2s ease;
+    opacity: 0.95;
+  }
+  .sponsor-item img{
+    max-width: 100%;
+    height: auto;
+    max-height: 64px;              /* ajuste se quiser maior/menor */
+    object-fit: contain;
+    display: block;
+  }
+  .sponsor-item:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+    opacity: 1;
+  }
+
+  @media (min-width: 768px){
+    .sponsors-wrap{ padding: 28px 16px 10px; }
+    .sponsors-grid{ gap: 22px; }
+    .sponsor-item img{ max-height: 72px; }
+  }
+  @media (min-width: 1200px){
+    .sponsors-grid{ gap: 24px; }
+    .sponsor-item img{ max-height: 84px; }
+  }
+</style>
+
+<section class="sponsors-wrap">
+  <!-- TÍTULO -->
+  <h2 class="sponsors-title">
+    Agradecimento aos <span class="hl">PATROCINADORES</span>
+  </h2>
+
+  <!-- MENSAGEM -->
+  <p class="sponsors-note">
+    Nós, da <strong>Equipe Rodrigo Faria</strong>, agradecemos imensamente a todos os patrocinadores
+    que acreditaram no projeto e tornaram este evento possível. O apoio de vocês fez a diferença —
+    nosso muito obrigado!
+  </p>
+
+  <!-- GRID DE LOGOS -->
+  <div class="sponsors-grid">
+
+    <a class="sponsor-item" href="https://iqo.com.br/" target="_blank" aria-label="Patrocinador">
+      <img loading="lazy" alt="Patrocinador" src="https://files.greatpages.com.br/arquivos/paginas_editor/95266-613c138f9f139d7ac01be3e7f35e766f.png">
+    </a>
+    <a class="sponsor-item" href="https://easybassi.com.br/" target="_blank" aria-label="Patrocinador">
+      <img loading="lazy" alt="Patrocinador" src="https://files.greatpages.com.br/arquivos/paginas_editor/95266-7b4ffcea3b94209dc29d3ef3e472dbc7.png">
+    </a>
+    <a class="sponsor-item" href="https://uniodontominas.com.br/"  target="_blank" aria-label="Patrocinador">
+      <img loading="lazy" alt="Patrocinador" src="https://files.greatpages.com.br/arquivos/paginas_editor/95266-5622d8261f18b32701220f04086a6f02.png">
+    </a>
+    <a class="sponsor-item" href="https://www.instagram.com/ricardooliveira8970/" target="_blank" aria-label="Patrocinador">
+      <img loading="lazy" alt="Patrocinador" src="https://files.greatpages.com.br/arquivos/paginas_editor/95266-6f244b2c6d242635a3aa8eee0c3aa5ce.png">
+    </a>
+    <a class="sponsor-item" href="https://helse.com.br/" target="_blank" aria-label="Patrocinador">
+      <img loading="lazy" alt="Patrocinador" src="https://files.greatpages.com.br/arquivos/paginas_editor/95266-ee7275ae741da2a4b2839358eff1e932.webp">
+    </a>
+    <a class="sponsor-item" href="https://endovitauberlandia.com.br/" target="_blank" aria-label="Patrocinador">
+      <img loading="lazy" alt="Patrocinador" src="https://files.greatpages.com.br/arquivos/paginas_editor/95266-e314a791bc86a526222db12f85c36b90.png">
+    </a>
+    <a class="sponsor-item" href="https://nossaclinicauberlandia.com.br/" target="_blank" aria-label="Patrocinador">
+      <img loading="lazy" alt="Patrocinador" src="https://files.greatpages.com.br/arquivos/paginas_editor/95266-cd9e8f1848fd6787355fe28290a37b5a.png">
+    </a>
+    <a class="sponsor-item" href="https://ceddrodigital.com.br/" target="_blank" aria-label="Patrocinador">
+      <img loading="lazy" alt="Patrocinador" src="https://files.greatpages.com.br/arquivos/paginas_editor/95266-d3a48b3443e4d6944865975e9ce20c1f.png">
+    </a>
+    <a class="sponsor-item" href="https://www.gnatus.com.br/" target="_blank" aria-label="Patrocinador">
+      <img loading="lazy" alt="Patrocinador" src="https://files.greatpages.com.br/arquivos/paginas_editor/95266-7f908c61e9b4d97dfa195b3837e62ede.png">
+    </a>
+    <a class="sponsor-item" href="https://odousdedeus.com.br/" target="_blank" aria-label="Patrocinador">
+      <img loading="lazy" alt="Patrocinador" src="https://odousdedeus.com.br/V/site/img/layout/logo.png">
+    </a>
+    <a class="sponsor-item" href="https://ultralightoptics.com.br/" target="_blank" aria-label="Patrocinador">
+      <img loading="lazy" alt="Patrocinador" src="https://files.greatpages.com.br/arquivos/paginas_editor/95266-a7180c4f0cc9e18f4bfed9c33b0018e4.png">
+    </a>
+    <a class="sponsor-item" href="https://www.instagram.com/mochospismel/" target="_blank" aria-label="Patrocinador">
+      <img loading="lazy" alt="Patrocinador" src="https://files.greatpages.com.br/arquivos/paginas_editor/95266-526bad182acc0a6df594f02d40e8e029.png">
+    </a>
+    <a class="sponsor-item" href="https://newtecnt.com.br/" target="_blank" aria-label="Patrocinador">
+      <img loading="lazy" alt="Patrocinador" src="https://files.greatpages.com.br/arquivos/paginas_editor/95266-a8e58a7673e1b06ccbf5f5d9d1cf5f06.png">
+    </a>
+    <a class="sponsor-item" href="https://www.idocradiologia.com.br/" target="_blank" aria-label="Patrocinador">
+      <img loading="lazy" alt="Patrocinador" src="https://files.greatpages.com.br/arquivos/paginas_editor/95266-50ba6c213978c596b90c1f7f56773bd4.png">
+    </a>
+    <a class="sponsor-item" href="https://www.dental-perfect.com/" target="_blank" aria-label="Patrocinador">
+      <img loading="lazy" alt="Patrocinador" src="https://files.greatpages.com.br/arquivos/paginas_editor/95266-1270f4d1be631da88e4e1aeb85764e54.png">
+    </a>
+    <a class="sponsor-item" href="https://loja-37938.lojavirtualfc.com.br/" target="_blank" aria-label="Patrocinador">
+      <img loading="lazy" alt="Patrocinador" src="https://files.greatpages.com.br/arquivos/paginas_editor/95266-69634479a005d22b11d87a42801faa54.png">
+    </a>
+    <a class="sponsor-item" href="https://univy.com.br/" target="_blank" aria-label="Patrocinador">
+      <img loading="lazy" alt="Patrocinador" src="https://files.greatpages.com.br/arquivos/paginas_editor/95266-a46d0f21ac30a9f61f10f4c0e5211dfe.png">
+    </a>
+    <a class="sponsor-item" href="https://www.instagram.com/uoc.imagem/" target="_blank" aria-label="Patrocinador">
+      <img loading="lazy" alt="Patrocinador" src="https://files.greatpages.com.br/arquivos/paginas_editor/95266-ac909b14466787af6d576e69813f548f.png">
+    </a>
+    <a class="sponsor-item" href="https://unitri.edu.br/" target="_blank" aria-label="Patrocinador">
+      <img loading="lazy" alt="Patrocinador" src="https://files.greatpages.com.br/arquivos/paginas_editor/95266-c4e9fb7f7aba69f47caf17fdc76f5e76.png">
+    </a>
+    <a class="sponsor-item" href="https://institutopv.com.br/home/" target="_blank" aria-label="Patrocinador">
+      <img loading="lazy" alt="Patrocinador" src="https://files.greatpages.com.br/arquivos/paginas_editor/95266-8e1682c3cdb9eeec1b591b38cbe3abd7.png">
+    </a>
+    <a class="sponsor-item" href="https://www.mklife.com.br/" target="_blank" aria-label="Patrocinador">
+      <img loading="lazy" alt="Patrocinador" src="https://files.greatpages.com.br/arquivos/paginas_editor/95266-42e977ca3848c73af549cb9914845dce.png">
+    </a>
+    <a class="sponsor-item" href="https://www.proformat.com.br/" target="_blank" aria-label="Patrocinador">
+      <img loading="lazy" alt="Patrocinador" src="https://files.greatpages.com.br/arquivos/paginas_editor/95266-fadd76c75819ab7ff51e7d5b908456fa.png">
+    </a>
+    <a class="sponsor-item" href="https://www.chrismedicudi.com.br/" target="_blank" aria-label="Patrocinador">
+      <img loading="lazy" alt="Patrocinador" src="https://files.greatpages.com.br/arquivos/paginas_editor/95266-770e808cd2b45141a982da14fcae8c6f.png">
+    </a>
+    <a class="sponsor-item" href="https://www.instagram.com/q.imagemfilmes/" target="_blank" aria-label="Patrocinador">
+      <img loading="lazy" alt="Patrocinador" src="https://files.greatpages.com.br/arquivos/paginas_editor/95266-3df3a976bf97d6a202dda262b914f103.png">
+    </a>
+
+  </div>
+</section>
